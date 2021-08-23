@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchMatch_"
+    android:padding="@dimen/_10sdp"
+    tools:context=".ui.home.HomeFragment">
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="12dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                style="@style/subText_"
+                android:text="ID" />
+
+            <TextView
+                android:id="@+id/text_view_id"
+                style="@style/subText_"
+                tools:text="1" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/subText_"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/text_view_name"
+                style="@style/subText_"
+                tools:text="Belal Khan" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/subText_"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/text_view_Email"
+                style="@style/subText_"
+                tools:text="probelalkhan@gmail.com" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Logout" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>
